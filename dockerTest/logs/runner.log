@@ -1,0 +1,49 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Loaded: 0.0 %
+Loaded: 10.0 %
+Loaded: 20.0 %
+Loaded: 30.0 %
+Loaded: 40.0 %
+Loaded: 50.0 %
+Loaded: 60.0 %
+Loaded: 70.0 %
+Loaded: 80.0 %
+Loaded: 90.0 %
+Loaded: 100.0 %
+Loaded: 0.0 %
+Loaded: 10.0 %
+Loaded: 20.0 %
+Loaded: 30.0 %
+Loaded: 40.0 %
+Loaded: 50.0 %
+Loaded: 60.0 %
+Loaded: 70.0 %
+Loaded: 80.0 %
+Loaded: 90.0 %
+Loaded: 100.0 %
+Args: --port
+Args: 9001
+Args: --bootstrap-server
+Args: kafka-1:9092
+Args: --input-topic
+Args: input
+Args: --output-topic
+Args: output
+Args: --metrics-topic
+Args: metrics
+Args: --algorithm-mode
+Args: 1
+Args: --amt-of-edges
+Args: 1497134
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/opt/flink/lib/flink-dist-1.17.1.jar) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Job has been submitted with JobID 9679501021f9ddc69451d4b3f4f5fff2
+Program execution finished
+Job with JobID 9679501021f9ddc69451d4b3f4f5fff2 has finished.
+Job Runtime: 120998 ms
+

@@ -1,0 +1,6 @@
+there are three places to change;
+in jar:
+    algorithmconfig
+    dataloader
+in script
+    run_jobs

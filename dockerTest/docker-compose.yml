@@ -1,0 +1,88 @@
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - common_network
+    healthcheck:
+      test: nc -z localhost 2181 || exit -1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    ports:
+      - 2181:2181
+
+  kafka-1:
+    image: confluentinc/cp-kafka:7.3.2
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+        restart: true
+    ports:
+      - 19092:19092
+    networks:
+      - common_network
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-1:9092,PLAINTEXT_HOST://localhost:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  kafka-2:
+    image: confluentinc/cp-kafka:7.3.2
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+        restart: true
+    ports:
+      - 29092:29092
+    networks:
+      - common_network
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka-2:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  jobmanager:
+    build:
+      context: .
+      dockerfile: dockers/jobmanager/Dockerfile
+    ports:
+      - 8081:8081
+    networks:
+      - common_network
+    depends_on:
+      - kafka-1
+      - kafka-2
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+    container_name: jobmanager
+    volumes:
+      - ./workspace/tasks:/workspace/tasks
+      - ./workspace/output:/workspace/output
+
+  taskmanager:
+    image: apache/flink:1.17.1-java11
+    depends_on:
+      - jobmanager
+    networks:
+      - common_network
+    command: taskmanager
+    scale: 1
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 2
+
+networks:
+  common_network:
