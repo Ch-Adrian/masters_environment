@@ -25,7 +25,7 @@ docker exec dockertest-kafka-1-1 sh -c "/bin/kafka-topics --bootstrap-server kaf
 echo -e $done
 
 echo "Fill topic 'input' with inc-dec setting..."
-java -jar ../jars/Kafka2-input-filler-args.jar $2 $4 &> ../logs/runner.log
+java -jar ../jars/data-loader.jar $2 $4 &> ../logs/runner.log
 echo -e $done
 
 #if [[ "$2" == "true" ]]; then
@@ -57,7 +57,7 @@ echo $(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | hea
 #./show_metrics.sh &> ../logs/metrics.log &
 
 echo "Start scanning metrics topic..."
-java -jar ../jars/Kafka2-metrics-scanner.jar &
+java -jar ../jars/data-scanner.jar &
 echo -e $done
 
 echo -n "Sleeping..."
