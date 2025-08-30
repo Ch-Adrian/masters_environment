@@ -24,7 +24,7 @@ docker exec dockertest-kafka-1-1 sh -c "/bin/kafka-topics --bootstrap-server kaf
 docker exec dockertest-kafka-1-1 sh -c "/bin/kafka-topics --bootstrap-server kafka-1:9092 --create --topic metrics --replication-factor 1 --partitions 1"
 echo -e $done
 
-echo "Fill topic 'input' with inc-dec setting..."
+echo "Fill topic 'input' with data..."
 java -jar ../jars/data-loader.jar $2 $4 &> ../logs/runner.log
 echo -e $done
 
@@ -61,7 +61,7 @@ java -jar ../jars/data-scanner.jar &
 echo -e $done
 
 echo -n "Sleeping..."
-sleep 120
+sleep 420
 echo -e $done
 
 jobID=$(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
@@ -69,8 +69,8 @@ echo "Stopping job: $jobID..."
 ./stop_job.sh $jobID
 echo -e $done
 
-echo "Killing metrics scanner: metrics_scanner_PID..."
-ps -ef | grep "java -jar ../jars/Kafka2-metrics-scanner.jar" | head -1 | awk '{print $2}' | xargs kill
+echo "Killing metrics scanner: data-scanner_PID..."
+ps -ef | grep "java -jar ../jars/data-scanner.jar" | head -1 | awk '{print $2}' | xargs kill
 echo -e $done
 
 echo "Plotting image..."

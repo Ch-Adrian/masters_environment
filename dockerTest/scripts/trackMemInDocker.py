@@ -4,8 +4,8 @@ import csv
 import sys
 
 client = docker.from_env()
-container_jobmanager = client.containers.get("30252a2bc77e")
-container_taskmanager = client.containers.get("ccd9c16c53b2")
+container_jobmanager = client.containers.get("jobmanager")
+container_taskmanager = client.containers.get("dockertest-taskmanager-1")
 
 def main(task_name, mode, data_file):
     with open("../logs/metrics/metrics_"+task_name+"_"+mode+"_"+data_file+"_jobmanager"+".csv", "w") as f_jobmanager:
