@@ -33,15 +33,15 @@ commands = {
 commands2 = {
     "web-NotreDame.txt": {
         0: [
-            # "dynamic-connectivity-ett-1.3.0.jar",
-            # "dynamic-connectivity-lct-1.3.0.jar",
-            # "dynamic-connectivity-incremental-1.3.0.jar"
+            "dynamic-connectivity-ett-1.3.0.jar",
+            "dynamic-connectivity-lct-1.3.0.jar",
+            "dynamic-connectivity-incremental-1.3.0.jar"
         ],
         1: [
             "dynamic-connectivity-ett-1.3.0.jar",
-            # "dynamic-connectivity-lct-1.3.0.jar",
-            # "dynamic-mst-ett-decremental-1.3.0.jar",
-            # "dynamic-sssp-decremental-1.3.0.jar"
+            "dynamic-connectivity-lct-1.3.0.jar",
+            "dynamic-mst-ett-decremental-1.3.0.jar",
+            "dynamic-sssp-decremental-1.3.0.jar"
         ],
         2: [
             "dynamic-connectivity-ett-1.3.0.jar",
@@ -76,12 +76,6 @@ data_len = {
     "web-NotreDame.txt": [1497134, 2*1497134, 149713],
     "Email-EuAll.txt": [420045, 2*420045, 42004],
     "facebook_combined.txt": [88234, 2*88234, 8823]
-}
-
-time_limits = {
-    "web-NotreDame.txt": 480,
-    "Email-EuAll.txt": 240,
-    "facebook_combined.txt": 240
 }
 
 BROKER = 'localhost:19092'
@@ -273,4 +267,5 @@ def run_all_optimze_loading_data():
 if __name__ == "__main__":
     # print(cmd)
     # run_algorithm(17)
-    run_all_optimze_loading_data()
+    # run_all_optimze_loading_data()
+    run_algorithm(17, True)

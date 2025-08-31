@@ -65,6 +65,8 @@ services:
       - |
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
+        jobmanager.memory.process.size: 2048m
+        taskmanager.memory.process.size: 4096m
     container_name: jobmanager
     volumes:
       - ./workspace/tasks:/workspace/tasks
@@ -83,6 +85,8 @@ services:
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
         taskmanager.numberOfTaskSlots: 2
+        jobmanager.memory.process.size: 2048m
+        taskmanager.memory.process.size: 4096m
 
 networks:
   common_network:
