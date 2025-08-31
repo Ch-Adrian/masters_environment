@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python runTwoCmd.py
+/usr/bin/python runTwoCmd.py

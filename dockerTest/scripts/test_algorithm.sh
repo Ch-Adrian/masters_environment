@@ -43,37 +43,25 @@ echo -e $done
 #./copy_jars.sh
 #echo -e $done
 
-echo -n "Testing app: $1 ..."
-./run_job.sh $1 $2 $3 >> ../logs/runner.log 2>&1 &
-echo -e $done
-
-echo -n "Sleeping..."
-sleep $5
-echo -e $done
-
-#echo $(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
-
-jobID=$(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
-echo "Stopping job: $jobID..."
-./stop_job.sh $jobID
-echo -e $done
-
-
-#./show_output.sh &> ../logs/output.log &
-#./show_metrics.sh &> ../logs/metrics.log &
-
-echo "Start scanning metrics topic..."
-java -jar ../jars/data-scanner.jar
-echo -e $done
-
-#echo -n "Sleeping..."
-#sleep 32
+#echo -n "Testing app: $1 ..."
+#./run_job.sh $1 $2 $3 >> ../logs/runner.log 2>&1 &
 #echo -e $done
 #
-#echo "Killing metrics scanner: data-scanner_PID..."
-#ps -ef | grep "java -jar ../jars/data-scanner.jar" | head -1 | awk '{print $2}' | xargs kill
+#echo -n "Sleeping..."
+#sleep $5
 #echo -e $done
 
-echo "Plotting image..."
-/usr/bin/python plotMetrics.py $1 $2 $4
-echo -e $done
+#echo $(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
+#
+#jobID=$(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
+#echo "Stopping job: $jobID..."
+#./stop_job.sh $jobID
+#echo -e $done
+#
+#echo "Start scanning metrics topic..."
+#java -jar ../jars/data-scanner.jar
+#echo -e $done
+#
+#echo "Plotting image..."
+#/usr/bin/python plotMetrics.py $1 $2 $4
+#echo -e $done
