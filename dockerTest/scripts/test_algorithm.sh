@@ -15,7 +15,7 @@ docker exec dockertest-kafka-1-1 sh -c "/bin/kafka-topics --bootstrap-server kaf
 echo -e $done
 
 echo -n "Sleeping..."
-sleep 5
+sleep 32
 echo -e $done
 
 echo "Creating topics..."
@@ -48,30 +48,31 @@ echo -n "Testing app: $1 ..."
 echo -e $done
 
 echo -n "Sleeping..."
-sleep 2
+sleep $5
 echo -e $done
 
-echo $(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
-
-#./show_output.sh &> ../logs/output.log &
-#./show_metrics.sh &> ../logs/metrics.log &
-
-echo "Start scanning metrics topic..."
-java -jar ../jars/data-scanner.jar &
-echo -e $done
-
-echo -n "Sleeping..."
-sleep 420
-echo -e $done
+#echo $(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
 
 jobID=$(grep -o "JobID [a-fA-F0-9]\+" ../logs/runner.log | awk '{print $2}' | head -1)
 echo "Stopping job: $jobID..."
 ./stop_job.sh $jobID
 echo -e $done
 
-echo "Killing metrics scanner: data-scanner_PID..."
-ps -ef | grep "java -jar ../jars/data-scanner.jar" | head -1 | awk '{print $2}' | xargs kill
+
+#./show_output.sh &> ../logs/output.log &
+#./show_metrics.sh &> ../logs/metrics.log &
+
+echo "Start scanning metrics topic..."
+java -jar ../jars/data-scanner.jar
 echo -e $done
+
+#echo -n "Sleeping..."
+#sleep 32
+#echo -e $done
+#
+#echo "Killing metrics scanner: data-scanner_PID..."
+#ps -ef | grep "java -jar ../jars/data-scanner.jar" | head -1 | awk '{print $2}' | xargs kill
+#echo -e $done
 
 echo "Plotting image..."
 /usr/bin/python plotMetrics.py $1 $2 $4

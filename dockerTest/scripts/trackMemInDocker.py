@@ -24,7 +24,7 @@ def main(task_name, mode, data_file):
                         usage = stats["memory_stats"]["usage"] / (1024*1024)
                         limit = stats["memory_stats"]["limit"] / (1024*1024)
                         writers[idx].writerow([time.time(), usage, limit])
-                    time.sleep(0.5)
+                    time.sleep(1)
             except KeyboardInterrupt:
                 print("\nStopped tracking.")
 
