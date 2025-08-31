@@ -274,5 +274,5 @@ if __name__ == "__main__":
     # print(cmd)
     # run_algorithm(17)
     # run_all_optimze_loading_data()
-    # run_algorithm(17, True)
-    plot_all()
+    run_algorithm(17, True)
+    # plot_all()
