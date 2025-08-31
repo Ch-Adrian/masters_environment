@@ -4,10 +4,11 @@ import sys
 import numpy as np
 
 def plot_metrics(task_name, mode, data_file):
-    with open("../logs/metrics.log", "r") as file:
+    # with open("../logs/metrics.log", "r") as file:
+    with open("../logs/results/metrics_"+task_name+"_"+mode+"_"+data_file+".log", "r") as file:
         content = file.readlines()
-        with open("../logs/results/metrics_"+task_name+"_"+mode+"_"+data_file+".log", "w") as new_file:
-            new_file.writelines(content)
+        # with open("../logs/results/metrics_"+task_name+"_"+mode+"_"+data_file+".log", "w") as new_file:
+        #     new_file.writelines(content)
         content = np.array([ int(i) for i in content])
         # print(content[:30])
 
@@ -20,7 +21,7 @@ def plot_metrics(task_name, mode, data_file):
         ax.set_xlabel('Number of processed edges')
         ax.set_title('Metrics over Time for '+data_file)
 
-        fig.savefig("../plots/results/metrics_"+task_name+"_"+mode+"_"+data_file+".png")
+        fig.savefig("../plots/results/metrics_"+task_name+"_"+mode+"_"+data_file+".svg")
         plt.close()
 
 if __name__ == "__main__":

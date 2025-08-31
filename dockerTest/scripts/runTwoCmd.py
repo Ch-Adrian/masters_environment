@@ -264,8 +264,15 @@ def run_all_optimze_loading_data():
                 data_loading_change = False
                 cnt += 1
 
+def plot_all():
+    for data_file, modes in commands2.items():
+        for mode, algos in modes.items():
+            for algo in algos:
+                plot_metrics(algo.split("-1.3.0")[0], str(mode), data_file.split(".")[0])
+
 if __name__ == "__main__":
     # print(cmd)
     # run_algorithm(17)
     # run_all_optimze_loading_data()
-    run_algorithm(17, True)
+    # run_algorithm(17, True)
+    plot_all()
