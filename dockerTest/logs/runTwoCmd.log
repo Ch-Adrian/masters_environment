@@ -1,0 +1,699 @@
+Running 0 command: ('dynamic-connectivity-ett-1.3.0.jar', '0', 'web-NotreDame.txt', '1497134') with data_loading_change=True
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 471 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 9957 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 29515 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 47082 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 58818 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 86108 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 113698 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 153247 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 170175 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 201605 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 238852 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 267175 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 300923 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 327890 and time elapsed: 143s
+Current amount of entries in Kafka topic 'metrics': 356416 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 390921 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 420757 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 445192 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 480401 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 513493 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 546008 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 577384 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 610830 and time elapsed: 235s
+Current amount of entries in Kafka topic 'metrics': 638584 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 669366 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 698317 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 730264 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 758401 and time elapsed: 286s
+Current amount of entries in Kafka topic 'metrics': 793443 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 827350 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 852500 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 887327 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 920700 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 953716 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 988082 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1022077 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1055362 and time elapsed: 378s
+Current amount of entries in Kafka topic 'metrics': 1084754 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 1114437 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 1146825 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 1179550 and time elapsed: 418s
+Current amount of entries in Kafka topic 'metrics': 1213278 and time elapsed: 429s
+Current amount of entries in Kafka topic 'metrics': 1245587 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 1279297 and time elapsed: 449s
+Current amount of entries in Kafka topic 'metrics': 1312188 and time elapsed: 459s
+Current amount of entries in Kafka topic 'metrics': 1342707 and time elapsed: 469s
+Current amount of entries in Kafka topic 'metrics': 1371952 and time elapsed: 480s
+Current amount of entries in Kafka topic 'metrics': 1403675 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 1416332 and time elapsed: 500s
+Current amount of entries in Kafka topic 'metrics': 1445213 and time elapsed: 510s
+Current amount of entries in Kafka topic 'metrics': 1476066 and time elapsed: 521s
+Current amount of entries in Kafka topic 'metrics': 1497134 and time elapsed: 531s
+JobId: 50ab278fba27d56104298a13bc5a8cfc
+Stopping Flink job...
+Suspending job "50ab278fba27d56104298a13bc5a8cfc" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-50ab27-08d995a1c003
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 1 command: ('dynamic-connectivity-lct-1.3.0.jar', '0', 'web-NotreDame.txt', '1497134') with data_loading_change=False
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 4174 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 27499 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 61308 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 90086 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 124224 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 157877 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 191500 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 224649 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 255610 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 287339 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 315944 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 350862 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 379500 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 412727 and time elapsed: 142s
+Current amount of entries in Kafka topic 'metrics': 446466 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 480321 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 513350 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 546313 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 579606 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 613176 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 645302 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 674319 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 705494 and time elapsed: 234s
+Current amount of entries in Kafka topic 'metrics': 738966 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 762341 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 794150 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 816708 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 849433 and time elapsed: 286s
+Current amount of entries in Kafka topic 'metrics': 882142 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 915182 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 933535 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 967585 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 1000262 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 1033376 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 1066058 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1098326 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1127532 and time elapsed: 378s
+Current amount of entries in Kafka topic 'metrics': 1158024 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 1182743 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 1212431 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 1244330 and time elapsed: 418s
+Current amount of entries in Kafka topic 'metrics': 1273246 and time elapsed: 429s
+Current amount of entries in Kafka topic 'metrics': 1303777 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 1337039 and time elapsed: 449s
+Current amount of entries in Kafka topic 'metrics': 1363788 and time elapsed: 459s
+Current amount of entries in Kafka topic 'metrics': 1395351 and time elapsed: 470s
+Current amount of entries in Kafka topic 'metrics': 1426995 and time elapsed: 480s
+Current amount of entries in Kafka topic 'metrics': 1459716 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 1491773 and time elapsed: 500s
+Current amount of entries in Kafka topic 'metrics': 1497134 and time elapsed: 510s
+JobId: 2718d933d6ce71f9f534d6420024a496
+Stopping Flink job...
+Suspending job "2718d933d6ce71f9f534d6420024a496" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-2718d9-9a24db3b8817
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 2 command: ('dynamic-connectivity-incremental-1.3.0.jar', '0', 'web-NotreDame.txt', '1497134') with data_loading_change=False
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 5392 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 26292 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 56550 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 100799 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 143407 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 182542 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 219546 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 263893 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 312818 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 363153 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 405590 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 445980 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 480073 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 513751 and time elapsed: 143s
+Current amount of entries in Kafka topic 'metrics': 548493 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 581781 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 613498 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 651697 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 692153 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 726153 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 768615 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 803303 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 838487 and time elapsed: 234s
+Current amount of entries in Kafka topic 'metrics': 872495 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 906904 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 941251 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 974706 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 1006763 and time elapsed: 286s
+Current amount of entries in Kafka topic 'metrics': 1044230 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 1093875 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 1145172 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 1196741 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 1230686 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 1265054 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 1297398 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1330936 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1364067 and time elapsed: 377s
+Current amount of entries in Kafka topic 'metrics': 1398077 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 1432519 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 1466965 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 1497134 and time elapsed: 418s
+JobId: 90023c75e9b4cb6be05256fff25314e2
+Stopping Flink job...
+Suspending job "90023c75e9b4cb6be05256fff25314e2" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-90023c-20180ca75196
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 3 command: ('dynamic-connectivity-ett-1.3.0.jar', '1', 'web-NotreDame.txt', '2994268') with data_loading_change=True
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 11522 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 53929 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 102805 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 148914 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 183080 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 232830 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 280277 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 326748 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 375263 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 423469 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 470541 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 517965 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 566527 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 616094 and time elapsed: 142s
+Current amount of entries in Kafka topic 'metrics': 655103 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 703483 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 751373 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 800187 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 848655 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 893519 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 928380 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 958843 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 992116 and time elapsed: 234s
+Current amount of entries in Kafka topic 'metrics': 1026837 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 1059398 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 1089769 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 1105317 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 1134029 and time elapsed: 286s
+Current amount of entries in Kafka topic 'metrics': 1158794 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 1191866 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 1222419 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 1254876 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 1288305 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 1320565 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 1350673 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1384150 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1409272 and time elapsed: 377s
+Current amount of entries in Kafka topic 'metrics': 1425569 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 1456075 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 1487127 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 1515104 and time elapsed: 418s
+Current amount of entries in Kafka topic 'metrics': 1538114 and time elapsed: 429s
+Current amount of entries in Kafka topic 'metrics': 1568931 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 1596353 and time elapsed: 449s
+Current amount of entries in Kafka topic 'metrics': 1628117 and time elapsed: 459s
+Current amount of entries in Kafka topic 'metrics': 1658364 and time elapsed: 469s
+Current amount of entries in Kafka topic 'metrics': 1685124 and time elapsed: 480s
+Current amount of entries in Kafka topic 'metrics': 1720114 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 1743740 and time elapsed: 500s
+Current amount of entries in Kafka topic 'metrics': 1771441 and time elapsed: 510s
+Current amount of entries in Kafka topic 'metrics': 1799632 and time elapsed: 521s
+Current amount of entries in Kafka topic 'metrics': 1832007 and time elapsed: 531s
+Current amount of entries in Kafka topic 'metrics': 1863582 and time elapsed: 541s
+Current amount of entries in Kafka topic 'metrics': 1885040 and time elapsed: 551s
+Current amount of entries in Kafka topic 'metrics': 1902778 and time elapsed: 561s
+Current amount of entries in Kafka topic 'metrics': 1919804 and time elapsed: 572s
+Current amount of entries in Kafka topic 'metrics': 1935085 and time elapsed: 582s
+Current amount of entries in Kafka topic 'metrics': 1953758 and time elapsed: 592s
+Current amount of entries in Kafka topic 'metrics': 1972054 and time elapsed: 602s
+Current amount of entries in Kafka topic 'metrics': 1991498 and time elapsed: 613s
+Current amount of entries in Kafka topic 'metrics': 2008097 and time elapsed: 623s
+Current amount of entries in Kafka topic 'metrics': 2026872 and time elapsed: 633s
+Current amount of entries in Kafka topic 'metrics': 2045081 and time elapsed: 643s
+Current amount of entries in Kafka topic 'metrics': 2064076 and time elapsed: 653s
+Current amount of entries in Kafka topic 'metrics': 2086050 and time elapsed: 664s
+Current amount of entries in Kafka topic 'metrics': 2103598 and time elapsed: 674s
+Current amount of entries in Kafka topic 'metrics': 2123466 and time elapsed: 684s
+Current amount of entries in Kafka topic 'metrics': 2143747 and time elapsed: 694s
+Current amount of entries in Kafka topic 'metrics': 2165053 and time elapsed: 704s
+Current amount of entries in Kafka topic 'metrics': 2183872 and time elapsed: 715s
+Current amount of entries in Kafka topic 'metrics': 2202948 and time elapsed: 725s
+Current amount of entries in Kafka topic 'metrics': 2222798 and time elapsed: 735s
+Current amount of entries in Kafka topic 'metrics': 2241831 and time elapsed: 745s
+Current amount of entries in Kafka topic 'metrics': 2263908 and time elapsed: 756s
+Current amount of entries in Kafka topic 'metrics': 2285698 and time elapsed: 766s
+Current amount of entries in Kafka topic 'metrics': 2306526 and time elapsed: 776s
+Current amount of entries in Kafka topic 'metrics': 2322732 and time elapsed: 786s
+Current amount of entries in Kafka topic 'metrics': 2338757 and time elapsed: 797s
+Current amount of entries in Kafka topic 'metrics': 2354259 and time elapsed: 807s
+Current amount of entries in Kafka topic 'metrics': 2368175 and time elapsed: 817s
+Current amount of entries in Kafka topic 'metrics': 2384045 and time elapsed: 827s
+Current amount of entries in Kafka topic 'metrics': 2399160 and time elapsed: 838s
+Current amount of entries in Kafka topic 'metrics': 2411304 and time elapsed: 848s
+Current amount of entries in Kafka topic 'metrics': 2427149 and time elapsed: 858s
+Current amount of entries in Kafka topic 'metrics': 2440336 and time elapsed: 868s
+Current amount of entries in Kafka topic 'metrics': 2453945 and time elapsed: 878s
+Current amount of entries in Kafka topic 'metrics': 2468582 and time elapsed: 889s
+Current amount of entries in Kafka topic 'metrics': 2481585 and time elapsed: 899s
+Current amount of entries in Kafka topic 'metrics': 2496152 and time elapsed: 909s
+Current amount of entries in Kafka topic 'metrics': 2512075 and time elapsed: 919s
+Current amount of entries in Kafka topic 'metrics': 2524255 and time elapsed: 929s
+Current amount of entries in Kafka topic 'metrics': 2537955 and time elapsed: 940s
+Current amount of entries in Kafka topic 'metrics': 2551812 and time elapsed: 950s
+Current amount of entries in Kafka topic 'metrics': 2564546 and time elapsed: 960s
+Current amount of entries in Kafka topic 'metrics': 2579241 and time elapsed: 970s
+Current amount of entries in Kafka topic 'metrics': 2591697 and time elapsed: 981s
+Current amount of entries in Kafka topic 'metrics': 2603862 and time elapsed: 991s
+Current amount of entries in Kafka topic 'metrics': 2617412 and time elapsed: 1001s
+Current amount of entries in Kafka topic 'metrics': 2628872 and time elapsed: 1011s
+Current amount of entries in Kafka topic 'metrics': 2638048 and time elapsed: 1022s
+Current amount of entries in Kafka topic 'metrics': 2646669 and time elapsed: 1032s
+Current amount of entries in Kafka topic 'metrics': 2655047 and time elapsed: 1042s
+Current amount of entries in Kafka topic 'metrics': 2662395 and time elapsed: 1052s
+Current amount of entries in Kafka topic 'metrics': 2669428 and time elapsed: 1063s
+Current amount of entries in Kafka topic 'metrics': 2676495 and time elapsed: 1073s
+Current amount of entries in Kafka topic 'metrics': 2682562 and time elapsed: 1083s
+Current amount of entries in Kafka topic 'metrics': 2688275 and time elapsed: 1093s
+Current amount of entries in Kafka topic 'metrics': 2693842 and time elapsed: 1103s
+Current amount of entries in Kafka topic 'metrics': 2699226 and time elapsed: 1114s
+Current amount of entries in Kafka topic 'metrics': 2703734 and time elapsed: 1124s
+Current amount of entries in Kafka topic 'metrics': 2708349 and time elapsed: 1134s
+Current amount of entries in Kafka topic 'metrics': 2712852 and time elapsed: 1144s
+Current amount of entries in Kafka topic 'metrics': 2716387 and time elapsed: 1155s
+Current amount of entries in Kafka topic 'metrics': 2719558 and time elapsed: 1165s
+Current amount of entries in Kafka topic 'metrics': 2723353 and time elapsed: 1175s
+Current amount of entries in Kafka topic 'metrics': 2726365 and time elapsed: 1185s
+Current amount of entries in Kafka topic 'metrics': 2729607 and time elapsed: 1195s
+Current amount of entries in Kafka topic 'metrics': 2732245 and time elapsed: 1206s
+Time limit exceeded while waiting for messages in 'metrics' topic.
+JobId: 7a62aada01a1141d843ec63aa0e2099a
+Stopping Flink job...
+Suspending job "7a62aada01a1141d843ec63aa0e2099a" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-7a62aa-86016a08aea0
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 4 command: ('dynamic-connectivity-lct-1.3.0.jar', '1', 'web-NotreDame.txt', '2994268') with data_loading_change=False
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 7522 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 37238 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 84482 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 121451 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 169466 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 204354 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 237766 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 270936 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 303493 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 332278 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 364735 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 384101 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 416532 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 447245 and time elapsed: 142s
+Current amount of entries in Kafka topic 'metrics': 474339 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 506018 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 546506 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 595272 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 646094 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 696381 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 747183 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 798135 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 849812 and time elapsed: 234s
+Current amount of entries in Kafka topic 'metrics': 899825 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 942364 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 976052 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 1008922 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 1042222 and time elapsed: 285s
+Current amount of entries in Kafka topic 'metrics': 1071284 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 1103306 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 1134453 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 1167129 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 1200364 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 1231668 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 1263057 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1286787 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1315537 and time elapsed: 377s
+Current amount of entries in Kafka topic 'metrics': 1343954 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 1375730 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 1403296 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 1432470 and time elapsed: 418s
+Current amount of entries in Kafka topic 'metrics': 1463308 and time elapsed: 429s
+Current amount of entries in Kafka topic 'metrics': 1495742 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 1526974 and time elapsed: 449s
+Current amount of entries in Kafka topic 'metrics': 1559423 and time elapsed: 459s
+Current amount of entries in Kafka topic 'metrics': 1588759 and time elapsed: 469s
+Current amount of entries in Kafka topic 'metrics': 1610667 and time elapsed: 480s
+Current amount of entries in Kafka topic 'metrics': 1636129 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 1667420 and time elapsed: 500s
+Current amount of entries in Kafka topic 'metrics': 1694351 and time elapsed: 510s
+Current amount of entries in Kafka topic 'metrics': 1726979 and time elapsed: 521s
+Current amount of entries in Kafka topic 'metrics': 1765649 and time elapsed: 531s
+Current amount of entries in Kafka topic 'metrics': 1814545 and time elapsed: 541s
+Current amount of entries in Kafka topic 'metrics': 1862864 and time elapsed: 551s
+Current amount of entries in Kafka topic 'metrics': 1912175 and time elapsed: 561s
+Current amount of entries in Kafka topic 'metrics': 1960851 and time elapsed: 572s
+Current amount of entries in Kafka topic 'metrics': 2008955 and time elapsed: 582s
+Current amount of entries in Kafka topic 'metrics': 2057913 and time elapsed: 592s
+Current amount of entries in Kafka topic 'metrics': 2105170 and time elapsed: 602s
+Current amount of entries in Kafka topic 'metrics': 2154129 and time elapsed: 612s
+Current amount of entries in Kafka topic 'metrics': 2203299 and time elapsed: 623s
+Current amount of entries in Kafka topic 'metrics': 2251846 and time elapsed: 633s
+Current amount of entries in Kafka topic 'metrics': 2301327 and time elapsed: 643s
+Current amount of entries in Kafka topic 'metrics': 2350590 and time elapsed: 653s
+Current amount of entries in Kafka topic 'metrics': 2399600 and time elapsed: 664s
+Current amount of entries in Kafka topic 'metrics': 2446967 and time elapsed: 674s
+Current amount of entries in Kafka topic 'metrics': 2494552 and time elapsed: 684s
+Current amount of entries in Kafka topic 'metrics': 2542728 and time elapsed: 694s
+Current amount of entries in Kafka topic 'metrics': 2584592 and time elapsed: 704s
+Current amount of entries in Kafka topic 'metrics': 2626095 and time elapsed: 715s
+Current amount of entries in Kafka topic 'metrics': 2672383 and time elapsed: 725s
+Current amount of entries in Kafka topic 'metrics': 2718765 and time elapsed: 735s
+Current amount of entries in Kafka topic 'metrics': 2766229 and time elapsed: 745s
+Current amount of entries in Kafka topic 'metrics': 2812623 and time elapsed: 755s
+Current amount of entries in Kafka topic 'metrics': 2858574 and time elapsed: 766s
+Current amount of entries in Kafka topic 'metrics': 2902813 and time elapsed: 776s
+Current amount of entries in Kafka topic 'metrics': 2949407 and time elapsed: 786s
+Current amount of entries in Kafka topic 'metrics': 2994268 and time elapsed: 796s
+JobId: 7f7ac0f119f31a3d6d2b7dd963c54353
+Stopping Flink job...
+Suspending job "7f7ac0f119f31a3d6d2b7dd963c54353" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-7f7ac0-a4773cfc9b5a
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 5 command: ('dynamic-mst-ett-decremental-1.3.0.jar', '1', 'web-NotreDame.txt', '2994268') with data_loading_change=False
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 13955 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 58048 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 111834 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 164832 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 218456 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 271660 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 324666 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 375334 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 428528 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 481345 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 534704 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 588055 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 639778 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 693034 and time elapsed: 142s
+Current amount of entries in Kafka topic 'metrics': 745867 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 798514 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 851747 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 903743 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 956625 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 1008751 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 1060425 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 1113303 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 1165868 and time elapsed: 234s
+Current amount of entries in Kafka topic 'metrics': 1217647 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 1269550 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 1321372 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 1372614 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 1424387 and time elapsed: 285s
+Current amount of entries in Kafka topic 'metrics': 1476303 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 1524526 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 1575881 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 1627074 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 1678954 and time elapsed: 336s
+Current amount of entries in Kafka topic 'metrics': 1731400 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 1783886 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1836416 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1888349 and time elapsed: 377s
+Current amount of entries in Kafka topic 'metrics': 1940591 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 1992598 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 2044608 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 2096538 and time elapsed: 418s
+Current amount of entries in Kafka topic 'metrics': 2148571 and time elapsed: 428s
+Current amount of entries in Kafka topic 'metrics': 2199467 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 2250509 and time elapsed: 449s
+Current amount of entries in Kafka topic 'metrics': 2302347 and time elapsed: 459s
+Current amount of entries in Kafka topic 'metrics': 2353886 and time elapsed: 469s
+Current amount of entries in Kafka topic 'metrics': 2404103 and time elapsed: 479s
+Current amount of entries in Kafka topic 'metrics': 2453833 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 2504038 and time elapsed: 500s
+Current amount of entries in Kafka topic 'metrics': 2554445 and time elapsed: 510s
+Current amount of entries in Kafka topic 'metrics': 2604578 and time elapsed: 520s
+Current amount of entries in Kafka topic 'metrics': 2654515 and time elapsed: 530s
+Current amount of entries in Kafka topic 'metrics': 2704748 and time elapsed: 541s
+Current amount of entries in Kafka topic 'metrics': 2754056 and time elapsed: 551s
+Current amount of entries in Kafka topic 'metrics': 2804461 and time elapsed: 561s
+Current amount of entries in Kafka topic 'metrics': 2854747 and time elapsed: 571s
+Current amount of entries in Kafka topic 'metrics': 2904960 and time elapsed: 582s
+Current amount of entries in Kafka topic 'metrics': 2955615 and time elapsed: 592s
+Current amount of entries in Kafka topic 'metrics': 2994268 and time elapsed: 602s
+JobId: 02fbae1b01077497a515fc3c815aa2e8
+Stopping Flink job...
+Suspending job "02fbae1b01077497a515fc3c815aa2e8" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-02fbae-5665e3e55402
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 6 command: ('dynamic-sssp-decremental-1.3.0.jar', '1', 'web-NotreDame.txt', '2994268') with data_loading_change=False
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 14276 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 59597 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 112957 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 167868 and time elapsed: 40s
+Current amount of entries in Kafka topic 'metrics': 216670 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 268376 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 320892 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 369918 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 417719 and time elapsed: 91s
+Current amount of entries in Kafka topic 'metrics': 457515 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 502833 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 547204 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 600295 and time elapsed: 132s
+Current amount of entries in Kafka topic 'metrics': 653571 and time elapsed: 143s
+Current amount of entries in Kafka topic 'metrics': 705740 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 753246 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 805348 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 856276 and time elapsed: 183s
+Current amount of entries in Kafka topic 'metrics': 909981 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 959663 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 1010382 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 1062414 and time elapsed: 224s
+Current amount of entries in Kafka topic 'metrics': 1110034 and time elapsed: 234s
+Current amount of entries in Kafka topic 'metrics': 1151705 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 1193212 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 1240329 and time elapsed: 265s
+Current amount of entries in Kafka topic 'metrics': 1301114 and time elapsed: 275s
+Current amount of entries in Kafka topic 'metrics': 1374483 and time elapsed: 285s
+Current amount of entries in Kafka topic 'metrics': 1437495 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 1501630 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 1569642 and time elapsed: 316s
+Current amount of entries in Kafka topic 'metrics': 1638819 and time elapsed: 326s
+Current amount of entries in Kafka topic 'metrics': 1707546 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 1771321 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 1833856 and time elapsed: 357s
+Current amount of entries in Kafka topic 'metrics': 1901310 and time elapsed: 367s
+Current amount of entries in Kafka topic 'metrics': 1968368 and time elapsed: 377s
+Current amount of entries in Kafka topic 'metrics': 2037515 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 2106675 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 2174866 and time elapsed: 408s
+Current amount of entries in Kafka topic 'metrics': 2243904 and time elapsed: 418s
+Current amount of entries in Kafka topic 'metrics': 2312436 and time elapsed: 428s
+Current amount of entries in Kafka topic 'metrics': 2380112 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 2448386 and time elapsed: 449s
+Current amount of entries in Kafka topic 'metrics': 2517950 and time elapsed: 459s
+Current amount of entries in Kafka topic 'metrics': 2587235 and time elapsed: 469s
+Current amount of entries in Kafka topic 'metrics': 2654431 and time elapsed: 479s
+Current amount of entries in Kafka topic 'metrics': 2721986 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 2790629 and time elapsed: 500s
+Current amount of entries in Kafka topic 'metrics': 2860128 and time elapsed: 510s
+Current amount of entries in Kafka topic 'metrics': 2929250 and time elapsed: 520s
+Current amount of entries in Kafka topic 'metrics': 2994268 and time elapsed: 531s
+JobId: e66f2ef3862130f71e5a675a87dab246
+Stopping Flink job...
+Suspending job "e66f2ef3862130f71e5a675a87dab246" with a CANONICAL savepoint.
+Savepoint completed. Path: file:/tmp/flink-savepoints/savepoint-e66f2e-67bca4138d55
+Flink job completed.
+Starting foreground scanning topic command...
+Foreground scanning topic command completed.
+Plotting metrics...
+Terminating background command...
+
+Stopped tracking.
+Background command terminated.
+Foreground command completed.
+Running 7 command: ('dynamic-connectivity-ett-1.3.0.jar', '2', 'web-NotreDame.txt', '1497134') with data_loading_change=True
+Starting background command...
+Running foreground command...
+Cleaning files...
+Files cleaned.
+Managing Kafka topics...
+Managing topic: input
+Managing topic: metrics
+Managing topic: output
+Kafka topics managed.
+Loading data into Kafka...
+Data loaded into Kafka.
+Starting Flink job...
+Current amount of entries in Kafka topic 'metrics': 15458 and time elapsed: 10s
+Current amount of entries in Kafka topic 'metrics': 55229 and time elapsed: 20s
+Current amount of entries in Kafka topic 'metrics': 101378 and time elapsed: 30s
+Current amount of entries in Kafka topic 'metrics': 141905 and time elapsed: 41s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 51s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 61s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 71s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 81s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 92s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 102s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 112s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 122s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 133s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 143s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 153s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 163s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 173s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 184s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 194s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 204s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 214s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 225s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 235s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 245s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 255s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 266s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 276s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 286s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 296s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 306s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 317s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 327s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 337s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 347s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 358s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 368s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 378s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 388s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 398s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 409s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 419s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 429s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 439s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 450s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 460s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 470s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 480s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 490s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 501s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 511s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 521s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 531s
+Current amount of entries in Kafka topic 'metrics': 149713 and time elapsed: 542s

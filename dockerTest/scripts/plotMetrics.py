@@ -16,15 +16,9 @@ def plot_metrics(task_name, mode, data_file):
         fig, ax = plt.subplots()
         ax.plot(x, content)
         ax.yaxis.set_major_locator(MaxNLocator(nbins=15))
-        ax.set_xlabel('Nanoseconds')
-        ax.set_ylabel('Number of processed edges')
-        if data_file == "web-NotreDame":
-            data_file2 = "web-NotreDame.txt"
-        elif data_file == "Email-EuAll":
-            data_file2 = "Email-EuAll.txt"
-        elif data_file == "facebook_combined":
-            data_file2 = "facebook_combined.txt"
-        ax.set_title('Metrics over Time for '+data_file2)
+        ax.set_ylabel('Nanoseconds')
+        ax.set_xlabel('Number of processed edges')
+        ax.set_title('Metrics over Time for '+data_file)
 
         fig.savefig("../plots/results/metrics_"+task_name+"_"+mode+"_"+data_file+".png")
         plt.close()
