@@ -31,9 +31,9 @@ commands = {
 }
 
 data_len = {
-    "web-NotreDame.txt": 1497134,
-    "Email-EuAll.txt": 420045,
-    "facebook_combined.txt": 88234
+    "web-NotreDame.txt": [1497134, 2*1497134, 1497134],
+    "Email-EuAll.txt": [420045, 2*420045, 420045],
+    "facebook_combined.txt": [88234, 2*88234, 88234]
 }
 
 time_limits = {
@@ -101,7 +101,7 @@ def generate_commands(nr=-1):
     for data_file, algos in commands.items():
         for algo, modes in algos.items():
             for mode in modes:
-                cmds.append((algo, str(mode), data_file, str(data_len[data_file]), str(time_limits[data_file])))
+                cmds.append((algo, str(mode), data_file, str(data_len[data_file][mode])))
     return cmds if nr == -1 else cmds[nr]
 
 def get_message_count(broker='localhost:19092', topic='metrics'):
@@ -122,16 +122,15 @@ def get_message_count(broker='localhost:19092', topic='metrics'):
     consumer.close()
     return total
 
-cmd = generate_commands(15)
-background_cmd = ["python3", "trackMemInDocker.py", cmd[0], cmd[1], cmd[2]]
-foreground_cmd = ["bash", "test_algorithm.sh", cmd[0], cmd[1], cmd[3], cmd[2], cmd[4]]
-foreground_cmd_load_data = ["java", "-jar", "../jars/data-loader.jar", cmd[1], cmd[2]]
-flink_cmd = ["bash", "run_job.sh", cmd[0], cmd[1], cmd[3]]
-stop_flink_job = ["bash", "stop_job.sh"]
-foreground_scanning_topic = ["java", "-jar", "../jars/data-scanner.jar"]
-foreground_cmd2 = ["bash", "end_test_algorithm.sh", cmd[0], cmd[1], cmd[3], cmd[2], cmd[4]]
+def run_algorithm(num):
 
-def main():
+    cmd = generate_commands(num)
+    background_cmd = ["python3", "trackMemInDocker.py", cmd[0], cmd[1], cmd[2]]
+    foreground_cmd_load_data = ["java", "-jar", "../jars/data-loader.jar", cmd[1], cmd[2]]
+    flink_cmd = ["bash", "run_job.sh", cmd[0], cmd[1], cmd[3]]
+    stop_flink_job = ["bash", "stop_job.sh"]
+    foreground_scanning_topic = ["java", "-jar", "../jars/data-scanner.jar"]
+
     # Start the background process
     print("Starting background command...")
     bg_process = subprocess.Popen(background_cmd)
@@ -181,7 +180,8 @@ def main():
         print("Flink job completed.")
 
         print("Starting foreground scanning topic command...")
-        subprocess.run(foreground_scanning_topic, check=True)
+        with open("../logs/runner.log", "a") as log_file:
+            subprocess.run(foreground_scanning_topic, check=True, stderr=log_file, stdout=log_file)
 
         print("Foreground scanning topic command completed.")
         print("Plotting metrics...")
@@ -198,8 +198,13 @@ def main():
 
     print("Foreground command completed.")
 
+def run_all():
+    total_cmds = len(generate_commands())
+    for i in range(total_cmds):
+        print(f"Running command {i+1}/{total_cmds}")
+        run_algorithm(i)
+
 if __name__ == "__main__":
-    print(cmd)
-    main()
-    # print(cmd[0].split("-1.3.0")[0], cmd[1], cmd[2].split(".")[0])
-    # plot_metrics(cmd[0].split("-1.3.0")[0], str(cmd[1]), cmd[2].split(".")[0])
+    # print(cmd)
+    # run_algorithm(17)
+    run_all()
