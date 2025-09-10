@@ -72,19 +72,41 @@ services:
       - ./workspace/tasks:/workspace/tasks
       - ./workspace/output:/workspace/output
 
+#  taskmanager:
+#    image: apache/flink:1.17.1-java11
+#    depends_on:
+#      - jobmanager
+#    networks:
+#      - common_network
+#    command: taskmanager
+#    scale: 1
+#    environment:
+#      - |
+#        FLINK_PROPERTIES=
+#        jobmanager.rpc.address: jobmanager
+#        taskmanager.numberOfTaskSlots: 4
+#        jobmanager.memory.process.size: 2048m
+#        taskmanager.memory.process.size: 4096m
+
   taskmanager:
-    image: apache/flink:1.17.1-java11
+    build:
+      context: .
+      dockerfile: ./dockers/taskmanager/Dockerfile
     depends_on:
       - jobmanager
     networks:
       - common_network
-    command: taskmanager
     scale: 1
+    privileged: true
+    volumes:
+      - /sys:/sys
+      - /proc:/proc
+      - /lib/modules:/lib/modules:ro
     environment:
       - |
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
-        taskmanager.numberOfTaskSlots: 2
+        taskmanager.numberOfTaskSlots: 4
         jobmanager.memory.process.size: 2048m
         taskmanager.memory.process.size: 4096m
 

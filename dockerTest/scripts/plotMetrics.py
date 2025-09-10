@@ -9,7 +9,16 @@ def plot_metrics(task_name, mode, data_file):
         content = file.readlines()
         with open("../logs/results/metrics_"+task_name+"_"+mode+"_"+data_file+".log", "w") as new_file:
             new_file.writelines(content)
-        content = np.array([ int(i) for i in content])
+        content = [(int(line.split(",")[3]), line.split(",")[2]) for line in content]
+        data = dict()
+        for line in content:
+            if line[0] not in data:
+                data[line[0]] = []
+            data[line[0]].append(line[1])
+        content = np.array([data[i] for i in sorted(data.keys())])
+        content = content.sum(axis=1)
+        print(len(content))
+        # content = np.array([ float(i) for i in content])
         # print(content[:30])
 
         # plt.plot(content)
