@@ -16,10 +16,10 @@ services:
 
   kafka-1:
     image: confluentinc/cp-kafka:7.3.2
+    restart: always
     depends_on:
       zookeeper:
         condition: service_healthy
-        restart: true
     ports:
       - 19092:19092
     networks:
@@ -34,10 +34,10 @@ services:
 
   kafka-2:
     image: confluentinc/cp-kafka:7.3.2
+    restart: always
     depends_on:
       zookeeper:
         condition: service_healthy
-        restart: true
     ports:
       - 29092:29092
     networks:
@@ -53,9 +53,15 @@ services:
   jobmanager:
     build:
       context: .
-      dockerfile: dockers/jobmanager/Dockerfile
+      dockerfile: dockers/jobmanager/Dockerfile2
+    volumes:
+      - ./taskmanager-logs:/taskmanager-logs
+    command: >
+      sh -c "cp /taskmanager-logs/flink-conf.yaml /opt/flink-1.17.2/conf/flink-conf.yaml &&
+             jobmanager.sh start-foreground"
     ports:
       - 8081:8081
+      - 6123:6123
     networks:
       - common_network
     depends_on:
@@ -65,47 +71,60 @@ services:
       - |
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
+        jobmanager.rpc.port: 6123
         jobmanager.memory.process.size: 2048m
         taskmanager.memory.process.size: 4096m
+        taskmanager.numberOfTaskSlots: 4
     container_name: jobmanager
-    volumes:
-      - ./workspace/tasks:/workspace/tasks
-      - ./workspace/output:/workspace/output
 
 #  taskmanager:
-#    image: apache/flink:1.17.1-java11
+#    build:
+#      context: .
+#      dockerfile: ./dockers/taskmanager/Dockerfile2
 #    depends_on:
 #      - jobmanager
 #    networks:
 #      - common_network
-#    command: taskmanager
 #    scale: 1
+#    privileged: true
+#    volumes:
+#      - /sys:/sys
+#      - /proc:/proc
+#      - /lib/modules:/lib/modules:ro
+#      - ./taskmanager-logs:/taskmanager-logs
 #    environment:
 #      - |
 #        FLINK_PROPERTIES=
 #        jobmanager.rpc.address: jobmanager
+#        jobmanager.rpc.port: 6123
 #        taskmanager.numberOfTaskSlots: 4
 #        jobmanager.memory.process.size: 2048m
 #        taskmanager.memory.process.size: 4096m
-
+#
   taskmanager:
     build:
       context: .
-      dockerfile: ./dockers/taskmanager/Dockerfile
+      dockerfile: ./dockers/taskmanager/Dockerfile2
     depends_on:
       - jobmanager
+    ports:
+      - "6122:6122"
     networks:
       - common_network
     scale: 1
     privileged: true
+    command: >
+      sh -c "cp /taskmanager-logs/flink-conf.yaml /opt/flink-1.17.2/conf/flink-conf.yaml &&
+             taskmanager.sh start-foreground"
     volumes:
       - /sys:/sys
       - /proc:/proc
       - /lib/modules:/lib/modules:ro
+      - ./taskmanager-logs:/taskmanager-logs
     environment:
-      - |
-        FLINK_PROPERTIES=
+      FLINK_PROPERTIES: |
         jobmanager.rpc.address: jobmanager
+        jobmanager.rpc.port: 6123
         taskmanager.numberOfTaskSlots: 4
         jobmanager.memory.process.size: 2048m
         taskmanager.memory.process.size: 4096m
